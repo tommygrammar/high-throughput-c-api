@@ -36,7 +36,7 @@ req.on('error', (e) => {
 });
 
 // Now we are sending the actual data
-console.time('Execution Time');
+
 req.write(postData);  // Sending the write request here
 req.end();            // Close the request
-console.timeEnd('Execution Time');
+
