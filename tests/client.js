@@ -8,9 +8,6 @@ const options = {
     method: 'POST',
 
 };
-
-
-
     // Create another request on the same persistent connection
     const req2 = http.request(options, (res) => {
         
@@ -36,9 +33,7 @@ const options = {
         console.error(`Error making request: ${e.message}`);
     });
 
-    // Now we are requesting the actual data
-    console.time('Execution Time');
     req2.end();  // Sending the read request here
-    console.timeEnd('Execution Time');
+
     
 
