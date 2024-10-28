@@ -57,6 +57,9 @@ To run the services:
 ```bash
 ./read
 ./write
+```
+
+## Committed to improving it
 
 
 
